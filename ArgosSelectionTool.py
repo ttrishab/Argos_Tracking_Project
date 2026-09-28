@@ -17,6 +17,14 @@ the_box = {
     'y_max': -75.00
 }
 
+#Create a variable pointing to the data file
+file_name = 'data/raw/Satellite tracking of black-capped petrels 2019-argos.csv'
+
+#Read the contents of the file into a list of lines
+with open(file_name,'r') as f:
+    #Read contents of file into a list
+	line_list = f.readlines()
+
 # Copy and paste a line of data as the lineString variable value
 lineString = '10154641232,true,2019-05-14 13:37:52.000,-75.49356999999998,34.86216,,0.0,-127.0,4.0167976787E8,5141.0,424,"40",34.86216,34.86216,"0",-75.49356999999998,-75.49356999999998,6,0,3,61.0,381.0,10718.0,2466.0,150,187,2,0,"1",,,"argos-doppler-shift","Pterodroma hasitata","174441","HA09","Satellite tracking of black-capped petrels, 2019"'
     
